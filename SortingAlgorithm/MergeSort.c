@@ -12,7 +12,11 @@
  * efficient
  *
  */
+
 #include<stdio.h>
+#include <stdlib.h>
+
+
 //prototypes
 void print(int*, int);
 void merge(int*, int, int ,int);
@@ -23,6 +27,10 @@ void main() {
        	printf("Enter num of elements: ");
        	scanf("%d",&N);
 
+	//N should Be greater than 0
+        if(N <= 0)
+                exit(0);
+                
        	//declare an array of size N
        	int arr[N];
 

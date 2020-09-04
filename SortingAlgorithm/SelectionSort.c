@@ -10,6 +10,7 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 //forward declaration
 void selectionSort(int* ,int );
@@ -21,6 +22,10 @@ void main() {
       printf("Enter num of elements: ");
       scanf("%d",&N);
 
+      //N should Be greater than 0
+      if(N <= 0)
+                exit(0);
+      
       //declare an array of size N
       int arr[N];
 
@@ -29,14 +34,14 @@ void main() {
           scanf("%d",(arr+i));
       }
 
-      printf("before sorting: ");
-		  print(arr,N);
+      	printf("before sorting: ");
+      	print(arr,N);
 
-      //call the function to sort the element
-			selectionSort(arr,N);
+      	//call the function to sort the element
+	selectionSort(arr,N);
 
-			printf("After sorting: ");
-      print(arr,N);
+	printf("After sorting: ");
+      	print(arr,N);
 
 }
 
@@ -51,8 +56,8 @@ void selectionSort(int* arr, int N) {
          */
         int temp,min , j,indexMin;
 
-      //find the min num and replace it with appropriate place
-      for(int i=0; i< N; i++) {
+      	//find the min num and replace it with appropriate place
+      	for(int i=0; i< N; i++) {
             min = arr[i];     //consider first as a minimum num
             j = i;
 
@@ -72,7 +77,6 @@ void selectionSort(int* arr, int N) {
                   arr[i] = min;
                   arr[indexMin] = temp;
             }
-            print(arr,N);
       }
 }
 

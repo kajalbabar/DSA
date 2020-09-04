@@ -1,8 +1,9 @@
-/*binary search
-    time complexity:O(1) for best case O(nlogn) for worst and average case
-    space complexity: O(1)
+/* binary search
+      time complexity:O(1) for best case O(nlogn) for worst and average case
+      space complexity: O(1)
 */
 #include <stdio.h>
+#include <stdlib.h>
 
 //prototype of the function
 int binarySearch(int* , int , int,int);
@@ -13,6 +14,9 @@ void main() {
         printf("Enter num of elements: ");
         scanf("%d",&N);
 
+        //N should Be greater than 0
+        if(N <= 0)
+                exit(0);
 
         //declare an array of size N
         int arr[N];

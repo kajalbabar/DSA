@@ -10,33 +10,38 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 //forward declaration
 void insertionSort(int* ,int );
 void print(int*, int);
 
 void main() {
-	    //take size  of an array and array elements
-      int N,key;
-      printf("Enter num of elements: ");
-      scanf("%d",&N);
+	//take size  of an array and array elements
+      	int N,key;
+      	printf("Enter num of elements: ");
+      	scanf("%d",&N);
 
-      //declare an array of size N
-      int arr[N];
 
-      printf("Enter %d elements: ",N);
-      for(int i=0; i< N; i++) {
+      	//N should Be greater than 0
+      	if(N <= 0)
+                exit(0);
+      	//declare an array of size N
+      	int arr[N];
+
+      	printf("Enter %d elements: ",N);
+      	for(int i=0; i< N; i++) {
           scanf("%d",(arr+i));
-      }
+      	}
 
-      printf("before sorting: ");
-		  print(arr,N);
+      	printf("before sorting: ");
+	print(arr,N);
 
-      //call the function to sort the element
-			insertionSort(arr,N);
+      	//call the function to sort the element
+	insertionSort(arr,N);
 
-			printf("After sorting: ");
-      print(arr,N);
+	printf("After sorting: ");
+      	print(arr,N);
 
 }
 
