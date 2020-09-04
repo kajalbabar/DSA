@@ -1,3 +1,7 @@
+/*
+ * 	This file contain declaration of structure which is used to create a node
+ */
+
 //create a structure for node
 typedef struct Node{
         //variable to store the data

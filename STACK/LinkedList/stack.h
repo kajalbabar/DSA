@@ -1,3 +1,5 @@
+#include "stackClass.h"
+
 /* ------------------ Push Method ------------------------------
  * return type: bool
  * parameter: int

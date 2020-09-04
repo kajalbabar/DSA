@@ -6,18 +6,16 @@
 #include <iostream>
 using namespace std;
 
-#include "node.h"
-
 
 //declared as global for visibility purpose
 int n;
 
-//hTable is an array which stores the address of structure
-Node** hTable = NULL;
-
-#include "method.h"
+#include "hashtable.h"
 
 int main() {
+	cout << "\033[0;31m";
+        cout << "\n\t\t\t\t Hash table by using Seperate Chaining method\n";
+    	cout<<"\033[m";
 	int choice, temp , data;
 
 	//test case 0: n should be greater than 0

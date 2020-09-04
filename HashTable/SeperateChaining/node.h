@@ -20,3 +20,6 @@ Node* createNode(int data) {
 	newNode->next = NULL;			//assign the null value
 	return newNode;				//return the address of the newly created node
 }
+
+//hTable is an array which stores the address of structure
+Node** hTable = NULL;

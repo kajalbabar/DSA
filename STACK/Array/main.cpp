@@ -1,18 +1,22 @@
-//include the stack and method header files
+/*
+ * 	This is driver program which is used to call stack methods
+ */
+
+
+//include the stack and other header files
 #include <iostream>
 #include <stdlib.h>
-
-
 using namespace std;
+
 #include "stack.h"
-#include "method.h"
 
 int main() {
-      //create object of stack to perform operations
-      Stack stack(10);
-      int choice;
-     cout << "\033[0;31m";
-     cout<<"\033[m";
+      	//create object of stack to perform operations
+      	Stack stack(10);
+      	int choice;
+     	cout << "\033[0;31m";
+        cout << "\n\t\t\t\t STACK USING ARRAY";
+    	cout<<"\033[m";
       do {
 
            cout << "\n\t\t************* STACK OPERATIONS *************" << endl;
@@ -102,4 +106,4 @@ int main() {
 
       }while(choice !=8);
       return 0;
-}
+}//..

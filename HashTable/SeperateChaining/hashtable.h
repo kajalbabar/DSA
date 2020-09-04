@@ -1,3 +1,10 @@
+/*
+ * This File contain methods for hash functions
+ */
+
+#include "node.h"
+
+
 /* hashFunction(int):
  *	return type: int
  *	parameter type: int

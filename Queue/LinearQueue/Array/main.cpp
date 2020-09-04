@@ -1,17 +1,28 @@
+/*
+ * 	This file contain driver program to call all queue methods
+ */
+
 //include all the necessary header files
 #include <iostream>
 using namespace std;
 
 #include "queue.h"
-#include "method.h"
+
 
 int main(){
         int choice , capacity,temp;
         cout << "Enter the capacity of queue: ";
         cin >> capacity;
-        if(capacity <= 0) {
+        
+	//test case for capacity 
+	if(capacity <= 0) {
             exit(0);
         }
+
+
+	cout << "\033[0;31m";
+	cout << "\n\t QUEUE USING ARRAY \n";	
+    	cout<<"\033[m";
         Queue queue(capacity);
 
 
@@ -99,4 +110,4 @@ int main(){
 
        }while(choice !=8);
 
-}
+}//..

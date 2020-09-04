@@ -6,7 +6,6 @@
 using namespace std;
 
 #include "hashtable.h"
-#include "methods.h"
 
 //driver program
 int main() {

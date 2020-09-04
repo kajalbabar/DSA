@@ -1,9 +1,11 @@
 
 /*
+ * This file contain declaration os Stack class 
  * In this code we are going to create stack by using linked list
- * The main advantage of using linked list is that we can push as element we can
+ * The main advantage of using linked list is that we can push as element we can 
  */
 
+#include "node.h"
 
 //create a class of Stack in which define all var and methods for operation on Stack
 class Stack  {
@@ -27,4 +29,4 @@ class Stack  {
             int peek();
             void display();
             int count();
-};
+};//..

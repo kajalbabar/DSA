@@ -1,20 +1,23 @@
-//include the stack and method header files
+/*
+ * 	This is driver program to call all the stack methods
+ */
+
+//include the stack and other header files
 #include <iostream>
 #include <stdlib.h>
-
-
 using namespace std;
-#include "Node.h"
-#include "Stack.h"
-#include "method.h"
+
+#include "stack.h"
 
 int main() {
-      //create object of stack to perform operations
-      Stack stack;
-      int choice;
-     cout << "\033[0;31m";
-     cout<<"\033[m";
-      do {
+      	//create object of stack to perform operations
+      	Stack stack;
+      	int choice;
+     	cout << "\033[1;31m";
+     	cout << "\n\t\t\t\t STACK USING LINKED LIST";
+	cout<<"\033[m";
+      	
+	do {
 
            cout << "\n\t\t************* STACK OPERATIONS *************" << endl;
            cout << "\t\t\t1. Push data" << endl;
@@ -94,6 +97,6 @@ int main() {
                     break;
              }
 
-      }while(choice !=7);
-      return 0;
+      	}while(choice !=7);
+      	return 0;
 }
